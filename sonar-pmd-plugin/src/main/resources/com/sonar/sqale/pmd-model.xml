@@ -3925,4 +3925,28 @@
       </chc>
     </chc>
   </chc>
+  <!-- p3c -->
+  <chc>
+    <key>P3C-PMD</key>
+    <name>p3c-pmd</name>
+    <chc>
+      <key>P3C_PMD</key>
+      <name>p3c_pmd</name>
+      <!--在此处添加rule的chc-->
+      <chc>
+        <rule-repo>pmd</rule-repo>
+        <rule-key>MethodTooLongRule</rule-key>
+        <prop>
+          <key>remediationFunction</key>
+          <txt>CONSTANT_ISSUE</txt>
+        </prop>
+        <prop>
+          <!--此处为该技术债务所需要的时间，单位使用min，此处设为2min-->
+          <key>offset</key>
+          <val>2</val>
+          <txt>min</txt>
+        </prop>
+      </chc>
+    </chc>
+  </chc>
 </sqale>
